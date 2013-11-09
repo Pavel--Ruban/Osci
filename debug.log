@@ -1,0 +1,51 @@
+[1109/235343:ERROR:network_change_notifier_win.cc(111)] WSALookupServiceBegin failed with: 8
+[1109/235805:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1109/235805:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1109/235805:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1109/235805:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/004443:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/004443:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/004443:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/004443:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/005208:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/005208:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/005208:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/005208:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/010034:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/010034:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/010634:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/010634:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/020432:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/020432:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/021108:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/021108:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/021424:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/021424:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/022940:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/022940:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/024226:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/024226:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/024712:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/024712:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/024812:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/024812:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/025032:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/025032:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/025132:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/025132:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/025552:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/025552:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/030208:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/030208:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/030208:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/030208:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/030443:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/030443:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/030443:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/030443:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/032340:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/032340:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/033737:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/033737:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/034448:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/034448:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR

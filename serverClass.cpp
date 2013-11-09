@@ -3,10 +3,12 @@
  * Definition of server class methods.
  */
 
+#include "serverClass.h"
+
 /*
  * Start server.
  */
-tcp::sever::run() {
+int osci::server::run() {
   // The MAN page of getaddrinfo() states "All  the other fields in the structure pointed
   // to by hints must contain either 0 or a null pointer, as appropriate." When a struct
   // is created in c++, it will be given a block of memory. This memory is not nessesary
@@ -84,5 +86,5 @@ tcp::sever::run() {
   //close(new_sd);
 
   // Return error status.
-  return 0 ;
+  return 0;
 }
