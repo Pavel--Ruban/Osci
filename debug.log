@@ -49,3 +49,5 @@
 [1110/033737:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
 [1110/034448:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
 [1110/034448:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR
+[1110/042920:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
+[1110/042920:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR

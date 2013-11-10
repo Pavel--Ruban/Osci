@@ -6,7 +6,7 @@
 #include "window.hpp"
 #include <iostream>
 #include <stdio.h>
-#include "../server/server.h"
+#include "../server/asyncServer.hpp"
 #include <libnotify/notify.h>
 
 /**
@@ -62,7 +62,7 @@ osci::managerWindow::managerWindow() :
 
   m_ButtonBox.pack_start(m_Button_Server, Gtk::PACK_SHRINK);
   m_Button_Server.signal_clicked().connect(sigc::mem_fun(*this,
-              &osci::managerWindow::on_button_notify) );
+              &osci::managerWindow::on_button_server) );
 
   m_ButtonBox.pack_start(m_Button_Notify, Gtk::PACK_SHRINK);
   m_Button_Notify.signal_clicked().connect(sigc::mem_fun(*this,
@@ -88,6 +88,24 @@ void osci::managerWindow::on_button_notify() {
 	notify_notification_show(Hello, NULL);
 }
 
+void run() {
+  try {
+    boost::asio::io_service io_service;
+    osci::tcp_server server(io_service);
+    io_service.run();
+  }
+  catch (std::exception& e) {
+    std::cerr << e.what() << std::endl;
+  }
+}
+
+/**
+ * Event handler definition.
+ */
+void osci::managerWindow::on_button_server() {
+
+}
+
 /**
  * Event handler definition.
  */
@@ -102,14 +120,6 @@ void osci::managerWindow::on_button_sql() {
 
   dbrc = sqlite3_exec(db, "SELECT * FROM a;", sqlResult, 0, &zErrMsg);
 
-//  hide();
-//   g_print ("Connecting...\n");
-//    osci::server *s = new osci::server();
-//    s->run();
-    //char *response;
-
-    // response = c.send("i20-notify 1.0");
-    //std::cout << response << std::endl;
 }
 
 /**
@@ -117,6 +127,4 @@ void osci::managerWindow::on_button_sql() {
  */
 void osci::managerWindow::on_notebook_switch_page(Gtk::Widget* page, guint page_num) {
   std::cout << "Switched to tab with index " << page_num << std::endl;
-
-  //You can also use m_Notebook.get_current_page() to get this index.
 }

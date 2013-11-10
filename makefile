@@ -1,23 +1,20 @@
 CC = g++ -g -Wall
 MANAGERCFLAGS = $(shell pkg-config --cflags --libs  gtkmm-3.0 sqlite3 libnotify) 
-#LIBNOTIFYFLAGS = -I/usr/lib/libnotifymm-1.0/include -I/usr/include/libnotifymm-1.0 -I/usr/include/atkmm-1.6 -I/usr/include/gtk-unix-print-2.0  -lnotifymm-1.0 -lfontconfig -lfreetype -lnotify
-#LIBNOTIFYFLAGS = -I/usr/lib/libnotifymm-1.0/include -I/usr/include/libnotifymm-1.0 -lnotifymm-1.0 -lnotify
-#MANAGERCFLAGS = $(shell pkg-config --cflags --libs  gtkmm-3.0 sqlite3)
-
+BOOSTLIBRATIES = -lboost_system -lboost_thread
 MANAGER = main.o window.o
-SERVER = server.o
+SERVER = asyncServer.o
 
 default : $(MANAGER) $(SERVER)
-	$(CC) $(MANAGER) $(SERVER) -o osci_manager $(MANAGERCFLAGS) #$(LIBNOTIFYFLAGS)
+	$(CC) $(MANAGER) $(SERVER) -o osci_manager $(MANAGERCFLAGS) $(BOOSTLIBRATIES)
 
-main.o : manager/main.cpp manager/window.hpp
+main.o : manager/main.cpp manager/window.hpp server/asyncServer.hpp
 	$(CC) manager/main.cpp -c $(MANAGERCFLAGS)
 
-window.o : manager/window.cpp manager/window.hpp
-	$(CC) manager/window.cpp -c $(MANAGERCFLAGS) #$(LIBNOTIFYFLAGS)
+window.o : manager/window.cpp manager/window.hpp server/asyncServer.hpp
+	$(CC) manager/window.cpp -c $(MANAGERCFLAGS)
 
-server.o : server/server.cpp server/server.h
-	$(CC) server/server.cpp -c
+asyncServer.o : server/asyncServer.cpp server/asyncServer.hpp
+	$(CC) server/asyncServer.cpp -c $(MANAGERCFLAGS)
 
 clean:
 	rm -f *.o 
