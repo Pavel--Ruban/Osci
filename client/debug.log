@@ -1,3 +1,0 @@
-[1021/030804:ERROR:network_change_notifier_win.cc(111)] WSALookupServiceBegin failed with: 8
-[1021/031018:WARNING:net_errors_win.cc(114)] Unknown error 64 mapped to net::ERR_FAILED
-[1021/031018:WARNING:nss_ssl_util.cc(124)] MapErrorToNSS -2 mapped to PR_UNKNOWN_ERROR

@@ -1,2 +1,4 @@
+*.o
+/osci_manager
 *.swp
 *.swo

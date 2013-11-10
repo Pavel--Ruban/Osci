@@ -1,14 +1,22 @@
-#include <ctime>
+/**
+ * @file
+ * TCP async server.
+ *
+ * Main goal is to update Manager window betwean multiple system threads
+ * respectiong incoming network data from client applications.
+ */
+
 #include <iostream>
 #include <string>
-#include <boost/thread.hpp>
 #include <boost/bind.hpp>
 #include <boost/shared_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include <boost/asio.hpp>
 
-using boost::asio::ip::tcp;
+// Network port to which server will be binded.
+#define OSCI_PORT 1090
 
+using boost::asio::ip::tcp;
 
 namespace osci {
   std::string make_daytime_string();
@@ -20,7 +28,6 @@ class osci::tcp_connection : public boost::enable_shared_from_this<tcp_connectio
   public:
     typedef boost::shared_ptr<tcp_connection> pointer;
 
-    // Tcp connection declarations.
     static pointer create(boost::asio::io_service& io_service) {
       return pointer(new osci::tcp_connection(io_service));
     }
